@@ -1,0 +1,6 @@
+[submodule "Resources/Private/Contrib/Iniliq"]
+	path = Resources/Private/Contrib/Iniliq
+	url = https://github.com/Pixel418/Iniliq.git
+[submodule "Resources/Private/Contrib/Ubiq"]
+	path = Resources/Private/Contrib/Ubiq
+	url = https://github.com/Pixel418/Ubiq.git
