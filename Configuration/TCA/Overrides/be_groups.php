@@ -1,5 +1,4 @@
 <?php
-
 $fields = array(
 	'ini_export' => array(
 		'label' => 'LLL:EXT:be_acl_file/Resources/Private/Language/locallang.xml:be_groups.ini_export',
