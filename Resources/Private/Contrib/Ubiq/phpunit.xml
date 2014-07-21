@@ -1,0 +1,5 @@
+<phpunit colors="true">
+    <testsuite name="Ubiq">
+        <directory>./test/Test</directory>
+    </testsuite>
+</phpunit>

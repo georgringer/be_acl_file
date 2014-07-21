@@ -1,0 +1,30 @@
+{
+    "name": "pixel418/ubiq",
+    "type": "library",
+    "description": "Functions for readable treatment of string, array & object",
+    "keywords": [ "util", "string", "array" ],
+    "homepage": "https://github.com/Pixel418/Ubiq",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas ZILLIOX",
+            "homepage": "http://tzi.fr",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "classmap": [ 
+            "src/UString.php", 
+            "src/UArray.php",
+            "src/UObject.php",
+            "src/UDate.php"
+        ],
+        "psr-0": {
+            "Pixel418\\Ubiq": "src/",
+            "Test\\Pixel418\\Ubiq": "test/"
+        }
+    }
+}
