@@ -2,5 +2,12 @@
 	"name": "georgringer/be_acl_file",
 	"version": "0.0.1",
 	"description": "BE access via files",
-	"type": "typo3cms-extension"
+	"type": "typo3cms-extension",
+	"config": {
+		"vendor-dir": "Resources/Private/Contrib"
+	},
+	"require": {
+		"pixel418/iniliq": "0.3.2",
+		"pixel418/ubiq": "0.4.*"
+	}
 }
