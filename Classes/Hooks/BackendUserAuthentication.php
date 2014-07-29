@@ -2,7 +2,6 @@
 
 namespace GeorgRinger\BeAclFile\Hooks;
 
-use GeorgRinger\BeAclFile\Exception;
 use GeorgRinger\BeAclFile\Service\IniAcl;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
@@ -43,8 +42,8 @@ class BackendUserAuthentication {
 		try {
 			$permissions = $this->iniAcl->overload($backendUserAuthentication->dataLists);
 			$backendUserAuthentication->dataLists = $permissions;
-		} catch (Exception $e) {
-			$this->logger->error($e->getMessage());
+		} catch (\Exception $e) {
+			$this->logger->debug($e->getMessage());
 		}
 	}
 }

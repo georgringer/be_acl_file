@@ -60,12 +60,14 @@ class IniAcl {
 	public function overload(array $currentPermissions) {
 		$files = $this->getFilesForCurrentUser();
 
-		$out = $this->iniParser->parse($files);
-		$newPermissions = $this->configurationMigrationService->fromIniToConfiguration($out->toArray());
+		if (!empty($files)) {
+			$out = $this->iniParser->parse($files);
+			$newPermissions = $this->configurationMigrationService->fromIniToConfiguration($out->toArray());
 
-		foreach ($newPermissions as $key => $value) {
-			if (!empty($value)) {
-				$currentPermissions[$key] = $value;
+			foreach ($newPermissions as $key => $value) {
+				if (!empty($value)) {
+					$currentPermissions[$key] = $value;
+				}
 			}
 		}
 		return $currentPermissions;
@@ -98,12 +100,6 @@ class IniAcl {
 				}
 				$files[] = $filePath;
 			}
-		}
-
-		if (empty($files)) {
-			$message = sprintf('No config files for user "%s" found at "%s".',
-				$GLOBALS['BE_USER']->user['username'], $directory);
-			throw new Exception($message);
 		}
 
 		return $files;
