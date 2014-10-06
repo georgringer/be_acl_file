@@ -1,6 +1,12 @@
 {
-	"name": "georgringer/be_acl_file",
+	"name": "georgringer/be-acl-file",
 	"version": "0.0.4",
 	"description": "BE access via files",
-	"type": "typo3cms-extension"
+	"type": "typo3-cms-extension",
+	"replace": {
+		"be_acl_file": "*"
+	},
+	"require": {
+		"typo3/cms-core": "6.2.*"
+	}
 }
