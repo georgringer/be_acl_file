@@ -7,6 +7,6 @@
 		"be_acl_file": "*"
 	},
 	"require": {
-		"typo3/cms-core": "6.2.*"
+		"typo3/cms-core": ">=6.2.6,<8.0"
 	}
 }
