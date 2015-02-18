@@ -32,6 +32,11 @@ Using this extension is simple!
 After installing the extension you need to configure the path to the configuration files.
 This is done in the Extension Manager. The path is relative to the web root.
 
+.. attention::
+
+	Because of the used hook, it is still required that every user is assigned to at least one group.
+	This is in most of the cases anyway needed for the access control of pages.
+
 Permission group assignment
 -------------------------------
 
